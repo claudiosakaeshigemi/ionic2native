@@ -1,0 +1,15 @@
+<ion-header> <!--#container da nav-bar -->
+    <ion-navbar>
+        <ion-title>
+          Notification
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button block (click) = "sendNotificacao()"> Notificar</button>
+
+  <p>
+    {{notification | json }}
+  </p>
+</ion-content>
